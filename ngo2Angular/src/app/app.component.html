@@ -1,0 +1,67 @@
+<!--
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <p class="network-name">ngo2@0.0.1.bna</p>
+        <p class="navbar-brand">ngo2Angular</p>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown">Assets</a>
+            <ul class="dropdown-menu scrollable-menu">
+              
+              <li><a [routerLink]="['/ContainerAsset']">ContainerAsset</a></li>
+              
+              <li><a [routerLink]="['/AmountReceivedAsset']">AmountReceivedAsset</a></li>
+              
+              <li><a [routerLink]="['/OverAllBalanceAsset']">OverAllBalanceAsset</a></li>
+              
+              <li><a [routerLink]="['/DonatedAmountAsset']">DonatedAmountAsset</a></li>
+              
+              <li><a [routerLink]="['/DeliveryReceivedAsset']">DeliveryReceivedAsset</a></li>
+              
+            </ul>
+        </li>
+        <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown">Participants</a>
+          <ul class="dropdown-menu scrollable-menu">
+            
+            <li><a [routerLink]="['/vendor']">vendor</a></li>
+            
+            <li><a [routerLink]="['/trustee']">trustee</a></li>
+            
+            <li><a [routerLink]="['/donor']">donor</a></li>
+            
+            <li><a [routerLink]="['/NGOManager']">NGOManager</a></li>
+            
+          </ul>
+      </li>
+      <li class="dropdown active">
+        <a class="dropdown-toggle" data-toggle="dropdown">Transactions</a>
+        <ul class="dropdown-menu scrollable-menu">
+          
+          <li><a [routerLink]="['/ContainerDelivery']">ContainerDelivery</a></li>
+          
+          <li><a [routerLink]="['/Donation']">Donation</a></li>
+          
+          <li><a [routerLink]="['/DeliveryReceived']">DeliveryReceived</a></li>
+          
+        </ul>
+    </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <router-outlet></router-outlet>
